@@ -1,6 +1,5 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
 body{
 
   margin: 0;
@@ -22,7 +21,6 @@ body{
   background-image:-moz-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
   background-image:radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
 
-  padding: 120px 0 500px;
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
 
@@ -69,4 +67,7 @@ footer > ul > li ul li a{
 
 footer > ul > li ul li a:hover{
   color:#fff !important;
+}
+.carousel-caption {
+  top: 20px;
 }
