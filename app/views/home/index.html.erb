@@ -1,20 +1,19 @@
-<div id="main">
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">RackCityRibs</a>
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#main-carousel" onclick="smoothScroll(this); return false">Home</a></li>
+        <li><a href="#about" onclick="smoothScroll(this); return false">About</a></li>
+        <li><a href="#events" onclick="smoothScroll(this); return false">Events</a></li>
         <li><a href="#">Menu</a></li>
-        <li><a href="#">Events</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
-  <div class="carousel slide reviews" id="mountains" data-ride="carousel">
+  <div class="carousel slide reviews" id="main-carousel" data-ride="carousel">
     <div class="carousel-inner reviews">
       <div class="caption-div">
         <h1 class="titlecaption">Rack City Ribs</h1>
@@ -28,10 +27,9 @@
       </div>
     </div>
   </div>
-</div>
-<footer>
-<h1> <center>  Coming Soon</h1>
-</footer>
+    <%= render'about/about' %>
+    <%= render'events/events' %>
+
 <script type='text/javascript'>
 $(document).ready(function() {
   $('.carousel').carousel({
