@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 body{
-
+  font-family:-webkit-body;
   margin: 0;
   padding: 0;
 
@@ -100,6 +100,7 @@ footer > ul > li ul li a:hover{
   width:580px;
   z-index:2;
   color:#932f2f;
+  background: rgba(0, 0, 0, 0.7);
 
   border-radius:5px;
   left:0;
@@ -111,10 +112,19 @@ footer > ul > li ul li a:hover{
 }
 .titlecaption {
   padding: 70px;
+  padding-bottom: 0px;
+
   font-size: 50px;
-  background: rgba(0, 0, 0, 0.7);
   text-align:center;
 }
 .title-span {
   color:white;
+  padding:20px;
+  padding-top:10px;
+
+  text-align:center;
+  display:block;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+  background-color: #331E1A;
 }
