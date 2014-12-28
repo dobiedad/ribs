@@ -9,6 +9,7 @@ body{
   (so that negative margins work as you expect) */
 
   position:relative;
+  background:black;
   z-index:0;
 }
 
@@ -73,7 +74,7 @@ footer > ul > li ul li a:hover{
   background:black;
 }
 .navbar {
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   margin-bottom: 0px;
   border: none;
   border-radius: 0px;
@@ -84,4 +85,36 @@ footer > ul > li ul li a:hover{
 }
 .navbar-brand {
   color:rgb(147, 47, 47) !important;
+  font-size: 25px;
+}
+.navbar-default .navbar-nav > li > a {
+  color:#932f2f;
+  font-size: 17px;
+  &:hover {
+  color:white;
+
+  }
+}
+.caption-div{
+  position:absolute;
+  width:580px;
+  z-index:2;
+  color:#932f2f;
+
+  border-radius:5px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  top:100px;
+}
+.titlecaption {
+  padding: 70px;
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align:center;
+}
+.title-span {
+  color:white;
 }

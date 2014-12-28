@@ -16,14 +16,15 @@
   </nav>
   <div class="carousel slide reviews" id="mountains" data-ride="carousel">
     <div class="carousel-inner reviews">
-      <div class="carousel-caption reviews">
-        <h1 class="titlecaption">Rack city ribs</h1>
+      <div class="caption-div">
+        <h1 class="titlecaption">Rack City Ribs</h1>
+        <!-- <span class="title-span">Eu mea nusquam deleniti intellegat, ei everti delicatissimi vis, cum ne case solum. Phaedrum voluptatibus signiferumque ne sit. Officiis adipisci ex vim, quo an graeco eligendi elaboraret, no mucius vocent similique per. Dico facilisi voluptatum pro in, aperiri elaboraret usu no.</span> -->
       </div>
       <div class="item  active reviews">
-        <%= image_tag 'ribs1.jpg'%>
+        <%= image_tag 'ribs2.jpg'%>
       </div>
       <div class="item reviews">
-        <%= image_tag 'ribs2.jpg'%>
+        <%= image_tag 'ribs1.jpg'%>
       </div>
     </div>
   </div>
@@ -34,7 +35,19 @@
 <script type='text/javascript'>
 $(document).ready(function() {
   $('.carousel').carousel({
-    interval: 3000
+    interval: 5000
   })
 });
+
+$(window).scroll(function(){
+  var width = $(window).width();
+    var body = $('body');
+    var menu = $('#full-menu');
+    var top = $(this).scrollTop();
+
+    $('.carousel-inner img').css('top', top / 2);
+
+
+});
+
 </script>
