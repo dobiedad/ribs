@@ -89,3 +89,11 @@ h1 {
   padding-top:60px;
 
 }
+.carousel .item {
+  left: 0 ;
+  -webkit-transition: opacity 3s; /*adjust timing here */
+  -moz-transition: opacity 3s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 3s;
+
+}
