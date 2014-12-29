@@ -1,7 +1,12 @@
 <div id="about" class="full-height">
-<h1><center>Welcome to RackCityRibs</h1>
-
-  <div class="carousel slide col-md-6" id="about-carousel-left">
+<h1 class="about-title">Welcome to RackCityRibs</h1>
+  <p class="col-xs-6 about-paragraph">
+    Barbeque grew up in the South of the USA where cooks learned to slow roast cuts of meat over fire pits to make them tender. Exposure to the smoke of the smouldering.
+  </p>
+  <p class="col-xs-6 about-paragraph">
+    Barbeque grew up in the South of the USA where cooks learned to slow roast cuts of meat over fire pits to make them tender. Exposure to the smoke of the smouldering
+  </p>
+  <div class="carousel slide col-xs-6" id="about-carousel-left">
     <div class="carousel-inner about ">
       <div class="item  active ">
         <%= image_tag 'ribs2.jpg'%>
@@ -9,18 +14,12 @@
       <div class="item ">
         <%= image_tag 'ribs.jpg'%>
       </div>
-      <div class="item ">
-        <%= image_tag 'ribs1.jpg'%>
-      </div>
     </div>
   </div>
-  <div class="carousel slide col-md-6" id="about-carousel-right">
+  <div class="carousel slide col-xs-6" id="about-carousel-right">
     <div class="carousel-inner about ">
       <div class="item  active ">
         <%= image_tag 'ribs.jpg'%>
-      </div>
-      <div class="item ">
-        <%= image_tag 'ribs1.jpg'%>
       </div>
       <div class="item ">
         <%= image_tag 'ribs2.jpg'%>
@@ -35,11 +34,10 @@ $(document).ready(function() {
   $('#about-carousel-left').carousel({
     interval: 3000
   })
-});
-$(document).ready(function() {
   $('#about-carousel-right').carousel({
     interval: 3000
   })
 });
+
 
 </script>
