@@ -5,18 +5,21 @@ body{
   background:transparent;
 }
 
-.carousel-caption {
+.carousel-caption.home {
   top: 20px;
 }
-.carousel img{
+.carousel.home img{
   min-height:100vh;
 
 }
-.carousel{
+.carousel.home{
   background:black;
 }
-.carousel-inner{
+.carousel-inner.home{
   max-height:100vh;
+}
+.carousel-inner.about {
+  width:200px;
 }
 .navbar {
   background: rgba(0, 0, 0, 0.8);
@@ -89,14 +92,7 @@ h1 {
   padding-top:60px;
 
 }
-.carousel .item {
-  left: 0 ;
-  -webkit-transition: opacity 3s; /*adjust timing here */
-  -moz-transition: opacity 3s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 3s;
 
-}
 .navbar-toggle{
   border:none;
   margin-right:5px;
@@ -114,7 +110,7 @@ h1 {
   background: rgba(8, 6, 5, 0.9);
 }
 @media screen and (max-width : 660px){
-  .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  .carousel-inner.home img {
     max-width: 200%;
   }
   .caption-div {
