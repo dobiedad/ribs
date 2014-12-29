@@ -1,25 +1,45 @@
 <div id="about" class="full-height">
 <h1><center>Welcome to RackCityRibs</h1>
 
-  <div class="carousel slide" id="about-carousel-left" data-ride="carousel">
-    <div class="carousel-inner about">
+  <div class="carousel slide col-md-6" id="about-carousel-left">
+    <div class="carousel-inner about ">
       <div class="item  active ">
         <%= image_tag 'ribs2.jpg'%>
+      </div>
+      <div class="item ">
+        <%= image_tag 'ribs.jpg'%>
+      </div>
+      <div class="item ">
+        <%= image_tag 'ribs1.jpg'%>
+      </div>
+    </div>
+  </div>
+  <div class="carousel slide col-md-6" id="about-carousel-right">
+    <div class="carousel-inner about ">
+      <div class="item  active ">
+        <%= image_tag 'ribs.jpg'%>
       </div>
       <div class="item ">
         <%= image_tag 'ribs1.jpg'%>
       </div>
       <div class="item ">
-        <%= image_tag 'ribs.jpg'%>
+        <%= image_tag 'ribs2.jpg'%>
       </div>
     </div>
   </div>
 </div>
-// <script type='text/javascript'>
-// $(document).ready(function() {
-//   $('#about-carousel-left').carousel({
-//     interval: 3000
-//   })
-// });
-//
-// </script>
+</div>
+
+ <script type='text/javascript'>
+$(document).ready(function() {
+  $('#about-carousel-left').carousel({
+    interval: 3000
+  })
+});
+$(document).ready(function() {
+  $('#about-carousel-right').carousel({
+    interval: 3000
+  })
+});
+
+</script>

@@ -19,7 +19,13 @@ body{
   max-height:100vh;
 }
 .carousel-inner.about {
-  width:200px;
+
+  max-height:346px;
+
+}
+#about-carousel-right {
+  max-height:346px;
+  
 }
 .navbar {
   background: rgba(0, 0, 0, 0.8);
