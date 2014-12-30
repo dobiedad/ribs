@@ -18,11 +18,12 @@ body{
 .carousel-inner.home{
   max-height:100vh;
 }
-.carousel-inner.about {
-
+.carousel-inner.about img{
+  border-radius:2px;
 
 }
-#about-carousel-right {
+#about-carousel-right img{
+  border-radius:2px;
 
 }
 .navbar {
@@ -36,8 +37,17 @@ body{
   z-index: 99;
 }
 .navbar-brand {
-  color:rgb(147, 47, 47) !important;
-  font-size: 25px;
+
+}
+.logo {
+  width:100px;
+  margin:auto;
+  left:0;
+  right:0;
+  position:absolute;
+
+}
+.logo-a {
 }
 .navbar-default .navbar-nav > li > a {
   color:#932f2f;
@@ -115,7 +125,10 @@ h1 {
 
 
 }
-
+.map-canvas {
+  width:300px;
+  height:300px;
+}
 .navbar-toggle{
   border:none;
   margin-right:5px;
