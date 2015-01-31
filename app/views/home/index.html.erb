@@ -25,11 +25,11 @@
   </div>
 </nav>
   <div class="carousel" id="main-carousel" data-ride="carousel">
-    <div class="carousel-inner home ">
-      <div class="caption-div">
-        <h1 class="titlecaption">Rack City Ribs</h1>
-        <span class="title-span">Eu mea nusquam deleniti intellegat, ei everti delicatissimi vis, cum ne case solum. Phaedrum voluptatibus signiferumque ne sit. Officiis adipisci ex vim, quo an graeco eligendi elaboraret, no mucius vocent similique per. Dico facilisi voluptatum pro in, aperiri elaboraret usu no.</span>
-      </div>
+    <div class="caption-div">
+      <h1 class="titlecaption">Rack City Ribs</h1>
+      <span class="title-span">Eu mea nusquam deleniti intellegat, ei everti delicatissimi vis, cum ne case solum. Phaedrum voluptatibus signiferumque ne sit. Officiis adipisci ex vim, quo an graeco eligendi elaboraret, no mucius vocent similique per. Dico facilisi voluptatum pro in, aperiri elaboraret usu no.</span>
+    </div>
+    <div class="carousel-inner home " id="large-carousel">
       <div class="item  active ">
         <%= image_tag 'ribs2.jpg'%>
       </div>
@@ -56,7 +56,7 @@ $(window).scroll(function(){
     var menu = $('#full-menu');
     var top = $(this).scrollTop();
 
-    $('#main-carousel img').css('top', top / 2);
+    $('#large-carousel ').css('top', top / 2);
 
 
 });

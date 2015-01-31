@@ -17,6 +17,7 @@ body{
 }
 .carousel-inner.home{
   max-height:100vh;
+  background: black;
 }
 .carousel-inner.about img{
   border-radius:2px;
@@ -48,6 +49,11 @@ body{
 
 }
 .logo-a {
+}
+#main-carousel {
+  & img{
+    position:relative;
+  }
 }
 .navbar-default .navbar-nav > li > a {
   color:#932f2f;
